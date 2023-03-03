@@ -28,7 +28,7 @@ function Projects() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1.2 }}
                 viewport={{ once: true }}
-                className=" h-28 xl:h-80 md:h-72 object-contain"
+                className=" h-28 xl:h-80 md:h-64 object-contain"
                 src={project.image}
                 alt={project.name}
               />

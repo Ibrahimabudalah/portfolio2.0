@@ -17,7 +17,7 @@ function Skills() {
         initial={{ x: directionLeft ? -200 : 200, opacity: 0 }}
         transition={{ duration: 1 }}
         whileInView={{ opacity: 1, x: 0 }}
-        className="grid grid-cols-4 gap-5 md:gap-10 lg:gap-14 xl:gap-20 px-5 pt-5"
+        className="grid grid-cols-4 gap-5 md:gap-10 lg:gap-14 xl:gap-20 px-5 pt-5 xl:pt-24"
       >
         <fa.FaHtml5 size={70} className="skill" />
         <fa.FaSass size={70} className="skill" />

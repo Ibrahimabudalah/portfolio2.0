@@ -1,33 +1,29 @@
 import React from "react";
 import BackgroundCircles from "./BackgroundCircles";
-import { motion } from "framer-motion";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 import heroPic from "../Assets/Images/HeroPicture.jpg";
-import { Link } from "react-scroll";
 
 function Hero() {
+  const scrollToAbout = () => {
+    const element = document.getElementById("about");
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
+  const scrollToSkills = () => {
+    const element = document.getElementById("skills");
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
-    const scrollToAbout = () => {
-      const element = document.getElementById("about");
-      if (element) {
-        element.scrollIntoView({ behavior: "smooth" });
-      }
-    };
-
-    const scrollToSkills = () => {
-      const element = document.getElementById("skills");
-      if (element) {
-        element.scrollIntoView({ behavior: "smooth" });
-      }
-    };
-
-    const scrollToProjects = () => {
-      const element = document.getElementById("projects");
-      if (element) {
-        element.scrollIntoView({ behavior: "smooth" });
-      }
-    };
+  const scrollToProjects = () => {
+    const element = document.getElementById("projects");
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   const [text, count] = useTypewriter({
     words: [
@@ -59,36 +55,15 @@ function Hero() {
         </h1>
 
         <div className="pt-5">
-          {/* <Link to="about" spy={true} smooth={true} offset={80} duration={500}> */}
-            <button className="heroBtn" onClick={scrollToAbout}>
-              About
-            </button>
-          {/* </Link> */}
-          {/* <Link
-            to="experience"
-            spy={true}
-            smooth={true}
-            offset={50}
-            duration={500}
-          >
-            <button className="heroBtn">Experience</button>
-          </Link> */}
-          {/* <Link to="skills" spy={true} smooth={true} offset={50} duration={500}> */}
-            <button className="heroBtn" onClick={scrollToSkills}>
-              Skills
-            </button>
-          {/* </Link> */}
-          {/* <Link
-            to="projects"
-            spy={true}
-            smooth={true}
-            offset={50}
-            duration={500}
-          > */}
-            <button className="heroBtn" onClick={scrollToProjects}>
-              Projects
-            </button>
-          {/* </Link> */}
+          <button className="heroBtn" onClick={scrollToAbout}>
+            About
+          </button>
+          <button className="heroBtn" onClick={scrollToSkills}>
+            Skills
+          </button>
+          <button className="heroBtn" onClick={scrollToProjects}>
+            Projects
+          </button>
         </div>
       </div>
     </div>

@@ -1,8 +1,6 @@
 import React, { useState } from "react";
-import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 import { MapPinIcon, EnvelopeIcon } from "@heroicons/react/24/solid";
-import ReCAPTCHA from "react-google-recaptcha";
 
 function ContactMe() {
   const sendEmail = (e) => {
@@ -84,11 +82,6 @@ function ContactMe() {
             {" "}
             Submit
           </button>
-          {/* <ReCAPTCHA
-            sitekey="6Lfr_8ckAAAAAFVRjObwnL0dOOFkY9IEhBOkRVqS"
-            data-theme="dark"
-                      onSubmit={onChange}
-          /> */}
         </form>
       </div>
     </div>

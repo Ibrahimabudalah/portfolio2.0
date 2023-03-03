@@ -1,10 +1,10 @@
-import React from 'react'
+import React from "react";
 import { motion } from "framer-motion";
 import * as icons from "react-icons/si";
 import * as fa from "react-icons/fa";
 
 function Skills() {
-    const directionLeft = Boolean;
+  const directionLeft = Boolean;
   return (
     <motion.div className="relative flex flex-col text-center md:text-left xl:flex-row max-w-[2000px] x:px-10 min-h-screen justify-center mx-auto xl:space-y-0 items-center">
       <h3 className="top-24 uppercase absolute tracking-[20px] text-gray-500 text-2xl">
@@ -37,4 +37,4 @@ function Skills() {
   );
 }
 
-export default Skills
+export default Skills;

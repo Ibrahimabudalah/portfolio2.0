@@ -1,17 +1,14 @@
-import React from 'react'
+import React from "react";
 import { motion } from "framer-motion";
 import { SocialIcon } from "react-social-icons";
-import { Link } from 'react-router-dom';
-
 
 function Header() {
-
-const handleClickScroll = () => {
-  const element = document.getElementById("contact");
-  if (element) {
-    element.scrollIntoView({ behavior: "smooth" });
-  }
-};
+  const handleClickScroll = () => {
+    const element = document.getElementById("contact");
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   return (
     <header className="sticky top-0 p-5 flex items-start justify-between max-w-7xl mx-auto z-20 xl:items-center">
@@ -31,7 +28,6 @@ const handleClickScroll = () => {
         }}
         className=" flex flex-row items-center"
       >
-        {/* React social icons */}
         <SocialIcon
           url="https://www.linkedin.com/in/ibrahim-abdulah/"
           fgColor="grey"
@@ -43,8 +39,6 @@ const handleClickScroll = () => {
           bgColor="transparent"
         />
       </motion.div>
-
-      {/* <Link to="#contact"> */}
       <motion.div
         onClick={handleClickScroll}
         initial={{
@@ -72,9 +66,8 @@ const handleClickScroll = () => {
           Get in touch
         </p>
       </motion.div>
-      {/* </Link> */}
     </header>
   );
 }
 
-export default Header
+export default Header;

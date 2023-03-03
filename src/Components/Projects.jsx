@@ -2,7 +2,6 @@ import React from "react";
 import { motion } from "framer-motion";
 import { ProjectsList } from "./ProjectsList";
 
-
 function Projects() {
   console.log(ProjectsList[0].technologies);
   return (
@@ -41,14 +40,16 @@ function Projects() {
                   {project.name}
                 </h4>
                 <div className="flex items-center space-x-2 justify-center ">
-                  {project.technologies.map((technology, i) => {return (
-                    <img
-                      key={i}
-                      className="h-10 w-10 rounded-full object-cover"
-                      src={technology.icon}
-                      alt="dsa"
-                    />
-                  );})}
+                  {project.technologies.map((technology, i) => {
+                    return (
+                      <img
+                        key={i}
+                        className="h-10 w-10 rounded-full object-cover"
+                        src={technology.icon}
+                        alt="icon"
+                      />
+                    );
+                  })}
                 </div>
 
                 <p className="text-sm md:text-md lg:text-lg text-justify ">

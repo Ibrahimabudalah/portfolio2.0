@@ -35,7 +35,7 @@ export const ProjectsList = [
         icon: sass,
       },
     ],
-  }, //two phones
+  },
   {
     image: portfolio,
     name: "Personal Portfolio",
@@ -51,10 +51,9 @@ export const ProjectsList = [
         icon: tailwind,
       },
     ],
-  }, // macbook
+  },
   {
-    image:
-      instock,
+    image: instock,
     name: "InStock",
     hubLink: "https://github.com/ibrahimabdulah/instock-belle",
     liveLink: "https://instock-belle.vercel.app/warehouse",
@@ -77,10 +76,9 @@ export const ProjectsList = [
         icon: jira,
       },
     ],
-  }, //ipad
+  },
   {
-    image:
-      fitpal,
+    image: fitpal,
     name: "YourFitnessPal",
     hubLink: "https://github.com/ibrahimabdulah/capstone-client",
     liveLink: "https://capstone-client-seven.vercel.app/",
@@ -101,7 +99,7 @@ export const ProjectsList = [
       },
       { icon: mongodb },
     ],
-  }, //imac
+  },
   {
     image: travelsite,
     name: "TravelSite",
@@ -117,24 +115,5 @@ export const ProjectsList = [
         icon: css,
       },
     ],
-  }, //
+  },
 ];
-
-// export const Technologies = [
-//   {
-//     image:
-//       "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png",
-//   },
-//   {
-//     image:
-//       "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png",
-//   },
-//   {
-//     image:
-//       "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png",
-//   },
-//   {
-//     image:
-//           "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png",
-//       "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/1024px-Tailwind_CSS_Logo.svg.png"
-//   },

@@ -1,7 +1,6 @@
-import React from 'react'
+import React from "react";
 import { motion } from "framer-motion";
 import heroPic from "../Assets/Images/HeroPicture.jpg";
-
 
 function About() {
   return (
@@ -51,4 +50,4 @@ function About() {
   );
 }
 
-export default About
+export default About;

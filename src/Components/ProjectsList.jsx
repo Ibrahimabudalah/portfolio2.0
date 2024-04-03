@@ -12,8 +12,34 @@ import portfolio from "../Assets/Images/portfolio.png";
 import travelsite from "../Assets/Images/travelsite.png";
 import fitpal from "../Assets/Images/fitpal.png";
 import instock from "../Assets/Images/instock.png";
+import mattzstore from "../Assets/Images/mattzstore.png";
+import nextjs from "../Assets/Images/nextjs.svg";
+import stripe from "../Assets/Images/stripe.svg";
+import js from "../Assets/Images/javascript-1-svgrepo-com.svg";
 
 export const ProjectsList = [
+  {
+    image: mattzstore,
+    name: "MattzStore",
+    hubLink: "https://www.mattzstore.com",
+    liveLink: "https://www.mattzstore.com",
+    description:
+      "A robust ecommerce platform that provides a seamless shopping experience for customers. Key features are: product listings, shopping cart, checkout process, ratings and reviews, responsive design, and security.",
+    technologies: [
+      {
+        icon: nextjs,
+      },
+      {
+        icon: stripe,
+      },
+      {
+        icon: js,
+      },
+      {
+        icon: tailwind,
+      },
+    ],
+  },
   {
     image: brainflix,
     name: "BrainFlix",

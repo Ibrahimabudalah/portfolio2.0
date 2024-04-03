@@ -1,6 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import emailjs from "@emailjs/browser";
 import { MapPinIcon, EnvelopeIcon } from "@heroicons/react/24/solid";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function ContactMe() {
   const sendEmail = (e) => {
@@ -21,7 +23,7 @@ function ContactMe() {
         }
       );
     e.target.reset();
-    window.alert("Your message has been send.");
+    toast.success("Your Message Has Been Sent");
   };
 
   return (
@@ -59,12 +61,14 @@ function ContactMe() {
               placeholder="Name"
               className="contactInput w-80 md:w-auto"
               type="text"
+              required
             />
             <input
               name="email"
               placeholder="Email"
               className="contactInput w-80 md:w-auto"
               type="email"
+              required
             />
           </div>
           <input
@@ -72,11 +76,13 @@ function ContactMe() {
             placeholder="Subject"
             className="contactInput "
             type="text"
+            required
           />
           <textarea
             name="message"
             placeholder="Message"
             className="contactInput"
+            required
           />
           <button className="bg-[#F7AB0A] py-3 md:py-5 px-10 rounded-lg text-white font-bold text-lg animate-pulse">
             {" "}

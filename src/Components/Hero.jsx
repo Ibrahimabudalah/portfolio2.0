@@ -25,7 +25,7 @@ function Hero() {
     }
   };
 
-  const [text, count] = useTypewriter({
+  const [text] = useTypewriter({
     words: [
       "Hi, I'm Ibrahim Abdulah",
       "<Problem Solver>",
@@ -42,7 +42,7 @@ function Hero() {
       <img
         className="relative rounded-full h-32 w-32 mx-auto object-cover"
         src={heroPic}
-        alt="Profile Picture"
+        alt="Profile"
       />
 
       <div className="z-20">
